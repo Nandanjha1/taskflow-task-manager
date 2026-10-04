@@ -70,28 +70,40 @@ React + Tailwind CSS
         |
       SQLite
 
+
+
 📁 Project Structure
+
 TaskFlow/
 ├── frontend/
 ├── backend/
 ├── README.md
 └── .gitignore
+
+
 ⚙️ Installation
+
 1. Clone Repository
-git clone YOUR_REPOSITORY_URL
+
+git clone https://github.com/Nandanjha1/taskflow-task-manager.git
 cd TaskFlow
+
+
 2. Frontend Setup
+
 cd frontend
 npm install
 
+
 Create .env:
 
-VITE_API_BASE_URL=http://localhost:8000/api
+VITE_API_BASE_URL= backend api
 VITE_USE_API=true
 
 Run:
 
 npm run dev
+
 3. Backend Setup
 
 Open another terminal:
@@ -101,31 +113,38 @@ python -m venv venv
 
 Activate virtual environment.
 
+
 Windows PowerShell:
 
 .\venv\Scripts\Activate.ps1
+
 
 Install dependencies:
 
 pip install -r requirements.txt
 
+
 Create .env:
 
-DATABASE_URL=sqlite:///./taskflow.db
-FRONTEND_URL=http://localhost:5173
+DATABASE_URL= database url
+FRONTEND_URL= frontend url
 
 Run:
 
-uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --reload --port 8000\
+
 🔌 API Endpoints
-Method	Endpoint	Description
-GET	/api/tasks	Get all tasks
-POST	/api/tasks	Create task
-GET	/api/tasks/{id}	Get task
-PUT	/api/tasks/{id}	Update task
-PATCH	/api/tasks/{id}/status	Update status
-DELETE	/api/tasks/{id}	Delete task
-DELETE	/api/tasks/completed	Clear completed
+
+Method	    Endpoint	            Description
+GET	        /api/tasks	            Get all tasks
+POST	    /api/tasks	            Create task
+GET	        /api/tasks/{id}	        Get task
+PUT	        /api/tasks/{id}	        Update task
+PATCH	    /api/tasks/{id}/status	Update status
+DELETE	    /api/tasks/{id}	        Delete task
+DELETE	    /api/tasks/completed	Clear completed
+
+
 💾 Data Persistence
 
 TaskFlow uses SQLite as the primary database.
@@ -146,7 +165,10 @@ Filter by priority
 Sort by creation date
 Sort by due date
 Sort by priority
+
+
 📋 Kanban Workflow
+
 TODO
   ↓
 IN PROGRESS
@@ -154,6 +176,7 @@ IN PROGRESS
 COMPLETED
 
 Tasks can also be moved using drag and drop.
+
 
 🧪 Validation
 
@@ -168,26 +191,24 @@ Valid status
 
 Validation is implemented on both frontend and backend.
 
+
 🔐 Environment Variables
 
 Sensitive configuration files such as .env are excluded from Git.
 
 An .env.example file is provided for setup reference.
 
+
 📸 Screenshots
 
-Add screenshots here:
 ![alt text](image.png)
 
-Dashboard
-Add Task Modal
-Kanban Board
-Search and Filter
-Dark Mode
-API Documentation
+
 🎥 Demo
 
-Add Loom demonstration link here.
+Loom demonstration link :- 
+
+
 
 📚 JavaScript Concepts Demonstrated
 
@@ -210,7 +231,10 @@ API integration
 Error handling
 LocalStorage
 Drag and Drop events
+
+
 🔮 Future Improvements
+
 User authentication
 Role-based access
 PostgreSQL
