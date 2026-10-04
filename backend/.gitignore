@@ -1,0 +1,9 @@
+taskflow.db
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+*.db
+*.sqlite
+*.sqlite3
