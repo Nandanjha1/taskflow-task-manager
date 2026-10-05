@@ -201,12 +201,12 @@ An .env.example file is provided for setup reference.
 
 📸 Screenshots
 
-![alt text](image.png)
+image.png
 
 
 🎥 Demo
 
-Loom demonstration link :- 
+Loom demonstration link :- https://www.loom.com/share/b18151ae720d472884f44f56102058fd
 
 
 
