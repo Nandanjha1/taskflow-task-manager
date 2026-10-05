@@ -24,7 +24,7 @@ const TaskToolbar = ({
                         value={searchQuery}
                         onChange={(event) => setSearchQuery(event.target.value)}
                         placeholder="Search tasks..."
-                        className="w-full rounded-lg border border-slate-300 py-2.5 98 pr-4 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                        className="w-full rounded-lg border border-slate-300 py-2.5 98 pl-10 text-sm outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
                     />
                 </div>
                 {/* Filters */}
